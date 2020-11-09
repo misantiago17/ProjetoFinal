@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="HUDController">
+    <Position X="0.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAAABAAAEAAAAABAAAAABAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\HUDController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fish">
+    <Position X="13" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAAAggAAAAAAAAAAAAAAQAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovementControl">
+    <Position X="13.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\MovementControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenguinAgent">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAIoAAAQAAAAAAAAABgAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\PenguinAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenguinArea">
+    <Position X="5.25" Y="1" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAQAACAIAAEgEAAECAAMAAAAAAAgAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\PenguinArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenguinConfig">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAANgAAAAAAAAgEAAQAAAAAAAIIQAAACAAAEEA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\PenguinConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

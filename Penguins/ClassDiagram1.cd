@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Fish">
+    <Position X="2.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAAAggAAAAAAAAAAAAAAQAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenguinAgent">
+    <Position X="5.25" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAEIAAAANoAAAQAAAAAAAAQBgAAAAAAIQAAACAAAAEA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\PenguinAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenguinArea">
+    <Position X="9.25" Y="1" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAEgQAACAIAAEgEAAECAAMAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Penguin\Scripts\PenguinArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
