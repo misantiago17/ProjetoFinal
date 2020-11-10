@@ -141,7 +141,7 @@ public class HUDController : MonoBehaviour
         AgentAccumulativeReward.text = "Accumulative reward:\n " + "0.00";
 
         //  Update the time past in the round
-        TimeTxt.text = "TIME\n" + "0.00";
+        TimeTxt.text = "Time left " + "0.00";
         currentTime = 0;
 
         area.ResetArea();
