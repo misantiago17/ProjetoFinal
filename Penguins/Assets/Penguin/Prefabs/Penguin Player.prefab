@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -576257647392366031, guid: c2dc4a7841f784d61b416415ebb13ebf, type: 3}
+  - {fileID: 2100000, guid: 2aeb5324693872246a8d8649062ecbb8, type: 2}
   - {fileID: 3633226791517336718, guid: c2dc4a7841f784d61b416415ebb13ebf, type: 3}
   - {fileID: 5916912933003525809, guid: c2dc4a7841f784d61b416415ebb13ebf, type: 3}
   - {fileID: 7038688542854162588, guid: c2dc4a7841f784d61b416415ebb13ebf, type: 3}
@@ -175,6 +175,10 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 5000
+  HUD: {fileID: 0}
+  HardModel: {fileID: 0}
+  MediumModel: {fileID: 0}
+  EasyModel: {fileID: 0}
 --- !u!114 &6662230477123211350
 MonoBehaviour:
   m_ObjectHideFlags: 0

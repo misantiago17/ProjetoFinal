@@ -71,10 +71,10 @@ public class HUDController : MonoBehaviour
     private void Update()
     {
         // Update the number os fish feed to the baby penguin
-        AgentNumFishRegurgitated.text = "Fish feed: " + agent.numFishFeed.ToString();
+        AgentNumFishRegurgitated.text = agent.numFishFeed.ToString();
 
         if (GameManager.gameMode == mode.competitive) {
-            PlayerNumFishRegurgitated.text = "Fish feed: " + player.numFishFeed.ToString();
+            PlayerNumFishRegurgitated.text = player.numFishFeed.ToString();
         }
 
         // Update the accumulative reward the agent is receiving during the round
@@ -83,7 +83,7 @@ public class HUDController : MonoBehaviour
         // Update the time past in the round
         currentTime += Time.deltaTime;
         seconds = (int) (currentTime % 60);
-        TimeTxt.text = "TIME\n" + seconds.ToString();
+        TimeTxt.text = "Time " + seconds.ToString() + "s";
 
         if (GameManager.difficulty == difficulty.easy) {
             MediumButton.interactable = true;
@@ -132,16 +132,16 @@ public class HUDController : MonoBehaviour
         LosePanel.SetActive(false);
 
         // Update the number os fish feed to the baby penguin
-        AgentNumFishRegurgitated.text = "Fish feed: " + "0";
+        AgentNumFishRegurgitated.text = "0";
 
         if (GameManager.gameMode == mode.competitive)
-            PlayerNumFishRegurgitated.text = "Fish feed: " + "0";
+            PlayerNumFishRegurgitated.text = "0";
 
         // Update the accumulative reward the agent is receiving during the round
-        AgentAccumulativeReward.text = "Accumulative reward:\n " + "0.00";
+        AgentAccumulativeReward.text = "Accumulative reward: " + "0.00";
 
         //  Update the time past in the round
-        TimeTxt.text = "Time left " + "0.00";
+        TimeTxt.text = "Time " + "0" + "s";
         currentTime = 0;
 
         area.ResetArea();
