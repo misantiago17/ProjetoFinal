@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
+using UnityEngine.SceneManagement;
 
 public class PenguinArea: MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class PenguinArea: MonoBehaviour
     /// Called when the game starts
     /// </summary>
     private void Start() {
+
+        if (SceneManager.GetActiveScene().name == "TrainingScene") {
+            GameManager.gameMode = mode.training;
+        }
 
         if (GameManager.gameMode == mode.competitive)
             initialPlayerPos = penguinPlayer.transform;

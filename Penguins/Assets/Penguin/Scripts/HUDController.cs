@@ -153,17 +153,17 @@ public class HUDController : MonoBehaviour
         // Easy
         if (difficulty == 0) {
             GameManager.difficulty = global::difficulty.easy;
-            descriptionText.text = "PPO";
+            descriptionText.text = "PPO + Curriculum + Memory";
 
         // Medium
         } else if (difficulty == 1) {
             GameManager.difficulty = global::difficulty.medium;
-            descriptionText.text = "PPO + Curriculum";
+            descriptionText.text = "PPO + Curriculum + Memory + Curiosity";
 
         // Hard
         } else {
             GameManager.difficulty = global::difficulty.hard;
-            descriptionText.text = "PPO + Curriculum + Memory";
+            descriptionText.text = "PPO + Curriculum";
         }
 
         agent.gameObject.GetComponent<PenguinAgent>().ChangeModel(GameManager.difficulty);

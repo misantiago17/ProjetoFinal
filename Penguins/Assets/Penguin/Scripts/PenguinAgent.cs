@@ -66,7 +66,9 @@ public class PenguinAgent: Agent
             HUD.NextRoundPanel();
 
         } else {
-            HUD.currentTime = 0;
+
+            if (GameManager.gameMode != mode.training)
+                HUD.currentTime = 0;
             penguinArea.ResetArea();
         }
 
@@ -102,7 +104,7 @@ public class PenguinAgent: Agent
 
         // Apply a tiny negative reward every step to encourage action and to achieve the goal faster
         if (MaxStep > 0) 
-            AddReward(-1f / MaxStep);
+            AddReward(-3f / MaxStep);
     }
 
     /// <summary>
@@ -167,7 +169,7 @@ public class PenguinAgent: Agent
             this.GetComponent<BehaviorParameters>().Model = EasyModel;
         } else if (difficulty == difficulty.medium) {
             this.GetComponent<BehaviorParameters>().Model = MediumModel;
-        } else {
+        } else if (difficulty == difficulty.hard) {
             this.GetComponent<BehaviorParameters>().Model = HardModel;
         }
 

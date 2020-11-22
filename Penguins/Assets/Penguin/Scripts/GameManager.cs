@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum mode {simulation, competitive}
+public enum mode {simulation, competitive, training}
 public enum difficulty { hard, medium, easy }
 
-public class GameManager : MonoBehaviour
+public class GameManager: MonoBehaviour
 {
     public static mode gameMode = mode.simulation;
     public static difficulty difficulty = difficulty.easy;
@@ -26,25 +26,28 @@ public class GameManager : MonoBehaviour
     }
 
     // Activate the simulation game mode
-    public void Simulation() {
+    public static void Simulation() {
 
         gameMode = mode.simulation;
-
         SceneManager.LoadScene("GameScene");
 
+    }
+
+    public void SimCall() {
+        Simulation();
     }
 
     // Activate the competitive game mode
-    public void Competitive() {
+    public static void Competitive() {
 
         gameMode = mode.competitive;
-
         SceneManager.LoadScene("GameScene");
 
     }
 
-    // Go to the menu
-    public void Menu() {
-        SceneManager.LoadScene("Menu");
+    public void CompCall() {
+        Competitive();
     }
+
+
 }
